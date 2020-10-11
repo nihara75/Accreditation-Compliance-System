@@ -142,7 +142,7 @@ public class login1 extends javax.swing.JFrame {
         try{
         Class.forName("com.mysql.cj.jdbc.Driver");
         //System.out.print("connect");
-        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javapro","nihu","Nihar@25*");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javapro","root","password");
         Statement st=con.createStatement();
         String query="Select password from Faculty where username='"+jTextField1.getText()+"'";
         ResultSet rs=st.executeQuery(query);

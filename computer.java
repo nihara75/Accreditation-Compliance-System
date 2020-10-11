@@ -227,7 +227,7 @@ public class computer extends javax.swing.JFrame {
         try
         {Class.forName("com.mysql.cj.jdbc.Driver");
         //System.out.print("connect");
-        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javapro","nihu","Nihar@25*");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javapro","root","password");
         
         String i="yes";
         Statement st=con.createStatement();
